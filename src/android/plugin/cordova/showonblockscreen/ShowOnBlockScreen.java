@@ -9,8 +9,8 @@ import org.json.JSONException;
 
 public class ShowOnBlockScreen extends CordovaPlugin {
 
-  private static final String ENABLED = "enabled";
-  private static final String DISABLED = "disabled";
+  private static final String ENABLED = "enable";
+  private static final String DISABLED = "disable";
 
   @Override
   public boolean execute(String action, JSONArray args, final CallbackContext callbackContext) throws JSONException {
