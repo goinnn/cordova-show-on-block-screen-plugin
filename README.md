@@ -21,9 +21,9 @@ For PhoneGap
 
 To activate screen on feature:
 
-	blockScreen.enable();
+	showOnBlockScreen.enable();
 	
 To deactivate screen on feature:
 
-	blockScreen.disable();
+	showOnBlockScreen.disable();
 	

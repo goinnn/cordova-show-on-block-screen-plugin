@@ -7,7 +7,7 @@ import org.apache.cordova.PluginResult;
 import org.json.JSONArray;
 import org.json.JSONException;
 
-public class Insomnia extends CordovaPlugin {
+public class ShowOnBlockScreen extends CordovaPlugin {
 
   private static final String ENABLED = "enabled";
   private static final String DISABLED = "disabled";
