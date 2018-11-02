@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin 
+        xmlns="http://www.phonegap.com/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="plugin.cordova.showonblockscreen"
+    version="1.0.0">
+    <name>Show on block screen</name>
+    <description>Show on block screen</description>
+    <license>MIT</license>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <js-module src="www/showOnBlockScreen.js" name="showOnBlockScreen">
+        <clobbers target="showOnBlockScreen" />
+    </js-module>
+
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="showOnBlockScreen">
+                <param name="android-package" value="plugin.cordova.showonblockscreen.ShowOnBlockScreen"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/plugin/cordova/showonblockscreen/ShowOnBlockScreen.java" target-dir="src/plugin/cordova/showonblockscreen" />
+    </platform>
+</plugin>
